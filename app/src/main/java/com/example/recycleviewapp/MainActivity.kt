@@ -11,7 +11,7 @@ import kotlin.collections.ArrayList
 class MainActivity : AppCompatActivity() {
     private lateinit var tweetsRecyclerView: RecyclerView
     private lateinit var tweetAdapter : TweetAdapter
-    var list: ArrayList<String> =  ArrayList()
+    var list: ArrayList<Any> =  ArrayList()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,6 +26,7 @@ class MainActivity : AppCompatActivity() {
 
         list.add("first Link")
         list.add("second Link")
+
         tweetAdapter.setItems(list)
     }
 }
